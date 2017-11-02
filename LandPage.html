@@ -8,29 +8,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <style>
 
-        input[type=text] {
-            width: 400px;
-            box-sizing: border-box;
-            border: 2px solid #ccc;
-            border-radius: 4px;
-            font-size: 16px;
-            background-color: white;
-            background-image: url('searchicon.png');
-            background-position: 10px 10px;
-            background-repeat: no-repeat;
-            padding: 12px 20px 12px 40px;
-            -webkit-transition: width 0.4s ease-in-out;
-            transition: width 0.4s ease-in-out;
-        }
-
-        input[type=text]:focus {
-            width: 100%;
-        }
-
-
-    </style>
 
 </head>
 <body>
@@ -88,13 +66,12 @@
         <ul class="nav navbar-nav">
             <li><a href="AboutUs.html"><span class="glyphicon glyphicon-question-sign"></span> About us</a></li>
             <li><a href="Contactanos.html"><span class="glyphicon glyphicon-phone-alt"></span> Contactanos</a></li>
-            <li><a href="#">Inversores</a></li>
-            <li><a href="#">Ofertas de empleo</a></li>
+            <li><a href="Inversores.html">Inversores</a></li>
 
         </ul>
         <ul class="nav navbar-nav navbar-right">
-            <li><a href="#"><span class="glyphicon glyphicon-thumbs-up"></span> Facebook</a></li>
-            <li><a href="#"><span class="glyphicon glyphicon-camera"></span> Instagram</a></li>
+            <li><a href="https://www.facebook.com"><span class="glyphicon glyphicon-thumbs-up"></span> Facebook</a></li>
+            <li><a href="https://www.instragram.com"><span class="glyphicon glyphicon-camera"></span> Instagram</a></li>
         </ul>
     </div>
 </nav>
@@ -111,6 +88,37 @@
         <form>
             <input type="text" name="search" placeholder="Ingresa una dirección, ciudad o codigo postal" >
         </form>
+
+        <div class="container">
+
+            <hgroup class="mb20">
+                <h1>Search Results</h1>
+                &nbsp;
+            </hgroup>
+
+            <section class="col-xs-12 col-sm-6 col-md-12">
+                <article class="search-result row">
+                    <div class="col-xs-12 col-sm-12 col-md-3">
+                        <a href="#" title="Lorem ipsum" class="thumbnail"><img src="Images/Casa1.jpg"/></a>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-2">
+                        <ul class="meta-search">
+                            <li><i class="glyphicon glyphicon-calendar"></i> <span>02/15/2014</span></li>
+                            <li><i class="glyphicon glyphicon-time"></i> <span>Casa</span></li>
+                            <li><i class="glyphicon glyphicon-tags"></i> <span>Renta</span></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-7 excerpet">
+                        <h3><a href="#" title="">Casa en Renta de 2 pisos</a></h3>
+                        <p>Se renta casa con 4 habitaciones, perfecta para estudiantes...</p>
+                        <span class="plus"><a href="#" ><i class="glyphicon glyphicon-plus"></i></a></span>
+                    </div>
+                    <span class="clearfix borda"></span>
+                </article>
+
+
+            </section>
+        </div>
     </center>
 </div>
 
