@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>About Us</title>
+    <title>Contactanos</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -64,7 +64,7 @@
 <nav class="navbar navbar-fixed-bottom">
     <div class="container-fluid">
         <ul class="nav navbar-nav">
-            <li><a href="#"><span class="glyphicon glyphicon-question-sign"></span> About us</a></li>
+            <li><a href=""><span class="glyphicon glyphicon-question-sign"></span> About us</a> </li>
             <li><a href="#"><span class="glyphicon glyphicon-phone-alt"></span> Contactanos</a></li>
             <li><a href="#">Inversores</a></li>
             <li><a href="#">Ofertas de empleo</a></li>
@@ -83,14 +83,34 @@
         &nbsp;
         <img src="Images/Logo.png">
         &nbsp;
-        <h3>Acerca de Nosotros</h3>
+        <h3>Contáctanos</h3>
         &nbsp;
 
-        Somos una empresa inmobilaria ...
+        <h4>Publica con nosotros</h4>
+        <h5>Telefonos 81 123 23 34</h5>
 
+        <h5>Oficinas localizadas</h5>
+        <h6>Monterrey
 
-    </center>
-</div>
+            Avenida Ejercito Nacional 350, piso 5, Col.Polanco,
+            Monterrey, N.L.
+            CP: 64810</h6>
+        <!-- Add Google Maps -->
+        <div id="googleMap" style="height:200px;width:100%;"></div>
+        <script>
+            function myMap() {
+                var myCenter = new google.maps.LatLng(41.878114, -87.629798);
+                var mapProp = {center:myCenter, zoom:12, scrollwheel:false, draggable:false, mapTypeId:google.maps.MapTypeId.ROADMAP};
+                var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+                var marker = new google.maps.Marker({position:myCenter});
+                marker.setMap(map);
+            }
+        </script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+        <!--
 
-</body>
-</html>
+            </center>
+        </div>
+
+        </body>
+        </html>
