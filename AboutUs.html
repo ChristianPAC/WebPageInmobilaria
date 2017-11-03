@@ -4,6 +4,7 @@
     <title>About Us</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/styleLogin.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -38,7 +39,7 @@
             <a class="navbar-brand" href="#">CORRE-INMOBILARIOS</a>
         </div>
         <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Inicio</a></li>
+            <li class="active"><a href="./LandPage.html">Inicio</a></li>
             <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Compra<span class="caret"></span></a>
                 <ul class="dropdown-menu">
                     <li><a href="#">Casas</a></li>
@@ -55,8 +56,26 @@
             </li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-            <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            <li><a href="./Signup.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+            <li><a href="#" data-toggle="modal" data-target="#login-modal"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            
+
+            <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+                      <div class="modal-dialog">
+                            <div class="loginmodal-container">
+                                <h1>Accesa a tu cuenta</h1><br>
+                              <form>
+                                <input type="text" name="user" placeholder="Username">
+                                <input type="password" name="pass" placeholder="Password">
+                                <input type="submit" name="login" class="login loginmodal-submit" value="Login">
+                              </form>
+                                
+                              <div class="login-help">
+                                <a href="#">Registrarse</a> - <a href="#">Olvidé mi password</a>
+                              </div>
+                            </div>
+                    </div>
+            </div>
         </ul>
     </div>
 </nav>
@@ -64,10 +83,10 @@
 <nav class="navbar navbar-fixed-bottom">
     <div class="container-fluid">
         <ul class="nav navbar-nav">
-            <li><a href="#"><span class="glyphicon glyphicon-question-sign"></span> About us</a></li>
-            <li><a href="#"><span class="glyphicon glyphicon-phone-alt"></span> Contactanos</a></li>
-            <li><a href="#">Inversores</a></li>
-            <li><a href="#">Ofertas de empleo</a></li>
+            <li><a href="./AboutUs.html"><span class="glyphicon glyphicon-question-sign"></span> About us</a></li>
+            <li><a href="./Contactanos.html"><span class="glyphicon glyphicon-phone-alt"></span> Contactanos</a></li>
+            <li><a href="./Inversores.html">Inversores</a></li>
+            <li><a href="">Ofertas de empleo</a></li>
 
         </ul>
         <ul class="nav navbar-nav navbar-right">
