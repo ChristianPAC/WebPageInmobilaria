@@ -73,7 +73,7 @@
             </hgroup>
             <section id="MostrarCasas" class="col-xs-12 col-sm-6 col-md-12">
                 <div class="content">
-                <article id="Joel" class="search-result row">
+                <article  class="search-result row">
                     <div class="col-xs-12 col-sm-12 col-md-3">
                         <a href="" title="Casas" class="thumbnail"><img src="Images/Casa1.jpg"/></a>
                     </div>
@@ -104,7 +104,7 @@
                 </article>
                 </div>
                 <div class="content">
-                <article id="Alvaro" class="search-result row">
+                <article  class="search-result row">
                     <div class="col-xs-12 col-sm-12 col-md-3">
                         <a href="" title="Casas" class="thumbnail"><img src="Images/Casa2.jpg"/></a>
                     </div>
@@ -125,7 +125,7 @@
                 </article>
                 </div>
                 <div class="content">
-                <article id="Aaron" class="search-result row">
+                <article  class="search-result row">
                     <div class="col-xs-12 col-sm-12 col-md-3">
                         <a href="" title="Casas" class="thumbnail"><img src="Images/Casa3.jpg"/></a>
                     </div>
@@ -148,7 +148,7 @@
                 </article>
                 </div>
                 <div class="content">
-                <article id="Ricardo" class="search-result row">
+                <article class="search-result row">
                     <div class="col-xs-12 col-sm-12 col-md-3">
                         <a href="" title="Casas" class="thumbnail"><img src="Images/Casa4.jpg"/></a>
                     </div>
@@ -202,21 +202,10 @@
 <script>
 $(document).ready(function(){
     $('#searchfield').keyup(function(){
- 
-    // Search text
     var text = $(this).val();
- 
-    // Hide all content class element
     $('.content').hide();
-
-    // Search and show
     $('.content:contains("'+text+'")').show();
- 
     });
-
-
-    
-
 });
 </script>
 </body>
