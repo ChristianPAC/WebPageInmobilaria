@@ -8,11 +8,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-
 </head>
 <body>
-
 <nav class="navbar navbar-inverse"  >
     <div class="container-fluid">
         <div class="navbar-header">
@@ -71,8 +68,6 @@
         </ul>
     </div>
 </nav>
-
-
 <div class="container">
     <center>
         &nbsp;
@@ -80,20 +75,17 @@
         &nbsp;
         <h3>The innovative way to find properties</h3>
         &nbsp;
-
         <form>
-            <input type="text" name="search" placeholder="Ingresa una dirección, ciudad o codigo postal" >
+            <input type="text" name="search" placeholder="Ingresa una dirección, ciudad o codigo postal" id="searchfield" >
         </form>
-
         <div class="container">
-
             <hgroup class="mb20">
                 <h1>Search Results...</h1>
                 &nbsp;
             </hgroup>
-
-            <section class="col-xs-12 col-sm-6 col-md-12">
-                <article class="search-result row">
+            <section id="MostrarCasas" class="col-xs-12 col-sm-6 col-md-12">
+                <div class="content">
+                <article id="Joel" class="search-result row">
                     <div class="col-xs-12 col-sm-12 col-md-3">
                         <a href="#" title="Casas" class="thumbnail"><img src="Images/Casa1.jpg"/></a>
                     </div>
@@ -105,10 +97,9 @@
                         </ul>
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-7 excerpet">
-                        <h3><a href="#" title="">Casa en Renta de 2 pisos</a></h3>
+                        <h3><a href="#" title="">Joel Casa en Renta de 2 pisos</a></h3>
                         <p>SE RENTA $12,000 PESOS
                             Excelente casa totalmente equipada ubicada al poniente de la ciudad, en residencial privada con acceso controlado.
-
                             La propiedad cuenta con:
                             • 3 recamaras
                             • 2 baños completos y un medio baño
@@ -121,8 +112,9 @@
                     </div>
                     <span class="clearfix borda"></span>
                 </article>
-
-                <article class="search-result row">
+                </div>
+                <div class="content">
+                <article id="Alvaro" class="search-result row">
                     <div class="col-xs-12 col-sm-12 col-md-3">
                         <a href="#" title="Casas" class="thumbnail"><img src="Images/Casa2.jpg"/></a>
                     </div>
@@ -134,14 +126,15 @@
                         </ul>
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-7 excerpet">
-                        <h3><a href="#" title="">Casa en Renta de 3 pisos</a></h3>
+                        <h3><a href="#" title="">Alvaro Casa en Renta de 3 pisos</a></h3>
                         <p>Comoda y funcional casa en cerrada al norte de la ciudad, en privada con alberca, areas infantiles y cancha de tenis, a unos pasos del Blvd. Morelos y Sams Club. Consta de 3 recamaras con closets, la principal con bano vestidor y terraza, estancia en planta alta. Toda el area de planta alta cuenta con piso nuevo. Moderna cocina integral, equipada con estufa y campana, vestibulo y medio bano</p>
                         <span class="plus"><a href="#" ><i class="glyphicon glyphicon-plus"></i></a></span>
                     </div>
                     <span class="clearfix borda"></span>
                 </article>
-
-                <article class="search-result row">
+                </div>
+                <div class="content">
+                <article id="Aaron" class="search-result row">
                     <div class="col-xs-12 col-sm-12 col-md-3">
                         <a href="#" title="Casas" class="thumbnail"><img src="Images/Casa3.jpg"/></a>
                     </div>
@@ -153,7 +146,7 @@
                         </ul>
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-7 excerpet">
-                        <h3><a href="#" title="">Casa en Renta de 2 pisos</a></h3>
+                        <h3><a href="#" title="">Aaron Casa en Renta de 2 pisos</a></h3>
                         <p>casa en renta en cerrada con acceso controlado, con alberca y area verde recreativa.
                             linda casa de 1 planta, 3 recamaras, 2.5 baños, area de lavado. equipada y semi amueblada.
                             equipo: a/c en todas las areas, cocina integral con estufa de 6 quemadores y campana, refrigerador de dos puertas, comedor de 6 sillas, calenton de agua, lavadora, abanicos de techo y lamparas. </p>
@@ -161,8 +154,9 @@
                     </div>
                     <span class="clearfix borda"></span>
                 </article>
-
-                <article class="search-result row">
+                </div>
+                <div class="content">
+                <article id="Ricardo" class="search-result row">
                     <div class="col-xs-12 col-sm-12 col-md-3">
                         <a href="#" title="Casas" class="thumbnail"><img src="Images/Casa4.jpg"/></a>
                     </div>
@@ -174,9 +168,8 @@
                         </ul>
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-7 excerpet">
-                        <h3><a href="#" title="">Casa en Renta de 2 pisos</a></h3>
+                        <h3><a href="#" title="">Ricardo Casa en Renta de 2 pisos</a></h3>
                         <p>Propiedad para oficina o casa habitación, en excelente ubicación.
-
                             La propiedad cuenta con:
                             • 3 recamaras
                             • 2 baños completos.
@@ -186,17 +179,37 @@
                             • Cocina Integral
                             • Estacionamiento para 2 autos
                             • Cuenta con 5 minisplits (1 ton. en cada Cuarto, 2 ton. en Sala y 1.5 ton. en Cocina)
-
                             • Sup. Terreno: 343 m2
                             • Construcción: 174 m2. </p>
                         <span class="plus"><a href="#" ><i class="glyphicon glyphicon-plus"></i></a></span>
                     </div>
                     <span class="clearfix borda"></span>
                 </article>
+                </div>
             </section>
         </div>
     </center>
 </div>
 
+<script>
+$(document).ready(function(){
+    $('#searchfield').keyup(function(){
+ 
+    // Search text
+    var text = $(this).val();
+ 
+    // Hide all content class element
+    $('.content').hide();
+
+    // Search and show
+    $('.content:contains("'+text+'")').show();
+ 
+    });
+
+
+    
+
+});
+</script>
 </body>
 </html>
