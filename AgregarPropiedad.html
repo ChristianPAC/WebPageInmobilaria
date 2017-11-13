@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CORRE-INMOBILIARIOS</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/AgregarPropiedad.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+    <div class="row">
+        <h2>Agregar Propiedad</h2>
+    </div>
+    
+    <div class="row">
+        <div class="col-sm-offset-4 col-sm-4">
+
+            <form method="post" >
+                <div class="form-group">
+                    <label for="validate-text">Título de la Propiedad</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="va" required oninvalid="this.setCustomValidity('Favor de introducir el título')"
+                         oninput="setCustomValidity('')">
+                        <span class="input-group-addon danger"><span class="glyphicon glyphicon-pencil"></span></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="validate-optional">Descripción</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" name="validate-description" id="validate-optional" placeholder="" required oninvalid="this.setCustomValidity('Favor de introducir la descripción')"
+                         oninput="setCustomValidity('')"  >
+                        <span class="input-group-addon info"><span class="glyphicon glyphicon-pencil"></span></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="validate-optional">Área de Terreno</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" name="validate-area" id="validate-text" placeholder=""  required oninvalid="this.setCustomValidity('Favor de introducir el área del terreno')"
+                         oninput="setCustomValidity('')">
+                        <span class="input-group-addon danger"><span class="glyphicon glyphicon-pencil"></span></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="validate-email">Área de Construcción</label>
+                    <div class="input-group" data-validate="email">
+                        <input type="text" class="form-control" name="validate-construction" id="validate-email" placeholder="" required oninvalid="this.setCustomValidity('Favor de introducir el área de construcción')"
+                         oninput="setCustomValidity('')">
+                        <span class="input-group-addon danger"><span class="glyphicon glyphicon-pencil"></span></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="validate-phone">Precio</label>
+                    <div class="input-group" data-validate="phone">
+                        <input type="text" class="form-control" name="validate-price" id="validate-price" placeholder="" required oninvalid="this.setCustomValidity('Favor de introducir el precio')"
+                         oninput="setCustomValidity('')">
+                        <span class="input-group-addon danger"><span class="glyphicon glyphicon-usd"></span></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="validate-length">Habitaciones</label>
+                    <div class="input-group" data-validate="length" data-length="5">
+                        <select class="form-control" name="validate-select" id="validate-select" placeholder="" required oninvalid="this.setCustomValidity('Favor de elegir las habitaciones')"
+                         oninput="setCustomValidity('')">
+                            <option value="">Seleccionar número de habitaciones</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                        </select>
+                        <span class="input-group-addon danger"><span class="glyphicon glyphicon-home"></span></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="validate-length">Pisos</label>
+                    <div class="input-group" data-validate="length" data-length="5">
+                        <select class="form-control" name="validate-select" id="validate-select" placeholder="" required oninvalid="this.setCustomValidity('Favor de elegir la cantidad de pisos')"
+                         oninput="setCustomValidity('')">
+                            <option value="">Seleccionar número de habitaciones</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                        <span class="input-group-addon danger"><span class="glyphicon glyphicon-align-justify"></span></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="validate-select">Tipo de Propiedad</label>
+                    <div class="input-group">
+                        <select class="form-control" name="validate-select" id="validate-select" placeholder="" required oninvalid="this.setCustomValidity('Favor de elegir el tipo de propiedad')"
+                         oninput="setCustomValidity('')">
+                            <option value="">Seleccionar el tipo</option>
+                            <option value="Casa">Casa</option>
+                            <option value="Departamento">Departamento</option>
+                        </select>
+                        <span class="input-group-addon danger"><span class="glyphicon glyphicon-home"></span></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="validate-number">Ubicación</label>
+                    <div class="input-group" data-validate="number">
+                        <input type="text" class="form-control" name="validate-number" id="validate-number" placeholder="" required oninvalid="this.setCustomValidity('Favor de introducir la ubicación')"
+                         oninput="setCustomValidity('')">
+                        <span class="input-group-addon danger"><span class="glyphicon glyphicon-pencil"></span></span>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary  col-xs-12" >Agregar</button>
+            </form>
+            
+        </div>
+    </div>
+</div>
+
+
+<footer class="footer">
+     <div class="container-fluid">
+        <ul class="nav navbar-nav">
+            <li><a href="AboutUs.html"><span class="glyphicon glyphicon-question-sign"></span> About us</a></li>
+            <li><a href="Contactanos.html"><span class="glyphicon glyphicon-phone-alt"></span> Contactanos</a></li>
+            <li><a href="Inversores.html">Inversores</a></li>
+
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="https://www.facebook.com"><span class="glyphicon glyphicon-thumbs-up"></span> Facebook</a></li>
+            <li><a href="https://www.instragram.com"><span class="glyphicon glyphicon-camera"></span> Instagram</a></li>
+        </ul>
+    </div>
+</footer>
+   
+
+
+
+</body>
+</html>
