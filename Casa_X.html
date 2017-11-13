@@ -69,48 +69,43 @@
         </ul>
     </div>
 </nav>
-<div class="container">
-    <center>
-      <div class="content">
-                <article  class="search-result row">
-                    <div class="col-xs-12 col-sm-12 col-md-3">
-                    <img id="myImg" src="Images/Casa1.jpg"/></a>
-                        <!-- The Modal -->
-                    <div id="myModal" class="modal">
-                        <span class="close">&times;</span>
-                        <img class="modal-content" id="img01">
-                        <div id="caption"></div>
-                        </div>
-                    <script>
-                    // Get the modal
-                    var modal = document.getElementById('myModal');
-                    // Get the image and insert it inside the modal - use its "alt" text as a caption
-                    var img = document.getElementById('myImg');
-                    var modalImg = document.getElementById("img01");
-                    var captionText = document.getElementById("caption");
-                    img.onclick = function(){
-                        modal.style.display = "block";
-                        modalImg.src = this.src;
-                        captionText.innerHTML = this.alt;
-                    }
-                    // Get the <span> element that closes the modal
-                    var span = document.getElementsByClassName("close")[0];
-                    // When the user clicks on <span> (x), close the modal
-                    span.onclick = function() { 
-                    modal.style.display = "none";
-                    }
-                    </script>
-                    </div>
-                      <div class="col-xs-12 col-sm-12 col-md-2">
-                        <ul class="meta-search">
-                            <li><i class="glyphicon glyphicon-calendar"></i> <span>02/15/2014</span></li>
-                            <li><i class="glyphicon glyphicon-time"></i> <span>Casa</span></li>
-                            <li><i class="glyphicon glyphicon-tags"></i> <span>Renta</span></li>
-                        </ul>
-                    </div>
-                    <div class="col-xs-12 col-sm-12 col-md-7 excerpet">
-                        <h3><a href="./Casa_X.html" title="">Casa en Renta de 2 pisos</a></h3>
-                        <p>SE RENTA $12,000 PESOS
+    <!-- Page Content -->
+    <div class="container">
+        <!-- Portfolio Item Heading -->
+        <h1 class="my-4">Casa en Renta de 2 pisos</h1>
+        <!-- Portfolio Item Row -->
+        <div class="row">
+            <div class="col-md-8">
+                <img id="myImg" class="img-fluid" src="Images/Casa1.jpg" height="500" width="750">
+                <!-- The Modal -->
+                <div id="myModal" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="modal-content" id="img01">
+                <div id="caption"></div>
+            </div>
+            <script>
+            // Get the modal
+            var modal = document.getElementById('myModal');
+            // Get the image and insert it inside the modal - use its "alt" text as a caption
+            var img = document.getElementById('myImg');
+            var modalImg = document.getElementById("img01");
+            var captionText = document.getElementById("caption");
+            img.onclick = function(){
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                captionText.innerHTML = this.alt;
+            }
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() { 
+                modal.style.display = "none";
+            }
+            </script>
+        </div>
+        <div class="col-md-4">
+          <h3 class="my-3">Descripción</h3>
+          <p>SE RENTA $12,000 PESOS
                             Excelente casa totalmente equipada ubicada al poniente de la ciudad, en residencial privada con acceso controlado.
                             La propiedad cuenta con:
                             • 3 recamaras
@@ -119,14 +114,17 @@
                             • Estancia
                             • Comedor
                             • Cocina Integral (estufa incluida)
-                            • Estacionamiento para 2 autos </p>
-                        <span class="plus"><a href="" ><i class="glyphicon glyphicon-plus"></i></a></span>
+                            • Estacionamiento para 2 autos</p>
+          <h3 class="my-3">Detalles</h3>
+                    <div class="col-xs-12 col-sm-12 col-md-2">
+                        <ul class="meta-search">
+                            <li><i class="glyphicon glyphicon-calendar"></i> <span>02/15/2014</span></li>
+                            <li><i class="glyphicon glyphicon-time"></i> <span>Casa</span></li>
+                            <li><i class="glyphicon glyphicon-tags"></i> <span>Renta</span></li>
+                        </ul>
                     </div>
-                    <span class="clearfix borda"></span>
-                  
-                </article>
-                </div>
-    </center>
-</div>
+        </div>
+      </div>
+      <!-- /.row -->
 </body>
 </html>
